@@ -7,9 +7,12 @@ library(tidyr)
 library(plotly)
 
 setwd('~/R/')
-data <-read.csv("Shiny_Wine_App/WineProject/WineData.csv")
-chmap2 <- read.csv("Shiny_Wine_App/WineProject/ChloroMapData.csv")
-full <- read.csv("Shiny_Wine_App/WineProject/WineWords.csv")
+data <-read.csv("./WineData.csv")
+#Projects/WineProject/WineData.csv
+chmap2 <- read.csv("./ChloroMapData.csv")
+#Projects/WineProject/ChloroMapData.csv
+full <- read.csv("./WineWords.csv")
+#Projects/WineProject/WineWords.csv
 full <- full %>%
   rename(., "Very Good" = "Very.Good")
 
